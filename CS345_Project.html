@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<script type = "text/javascript">
+			function postcomment(){
+				var txtusername = document.getElementById("username");
+				var txtmessage = document.getElementById("message");
+				var txtOutput = document.getElementById("txtOutput");
+				var discussion = txtusername.value + txtmessage.value;
+				txtOutput.value = discussion;
+			}
+		</script>
+		<style>
+			
+		</style>
+	</head>
+	<body>
+		<div class="container-fluid">
+			<div class="row-fluid">
+				<h1>Triage Grading Scale Discussion Board</h1>
+				<table class="table table-bordered table-striped">
+					<caption>Question: Here is the Information Page on the Triage Grading! Please leave any comments or concerns that you have below. </caption>
+					<thead>
+						<tr>
+							<th>
+								
+								<img src="https://lh3.googleusercontent.com/_fXsLhyMocPS6_jvW7zR9JyRPiiRKUlgkJR-wmD_4hulo09ciUEdCVjypGRbdY-x6Imo3JT2MYaEs2ZLtuk3EzfVKyBPc9RBBD2jgaUBCaLzKAHElCGEJ_LfrjB4nwTizxeX8mVrfFT_lEZbytWpuIH94dTVrKPK-UFmLKfgSc_MsnqXSl6bqjhB6HoOOWz1NngkkY1z-uRiVEoNlasuAp4tw46iMgQ7IRG-Y4OTHUwGTB3WHMZLUbQL57fg9vX5Zp8FtXPqgvSVSQEUbTXoG7lMaSHiX0PwCuVeBxKsy7wKgxmD_Nf-19bxf7n-ddg7Z_570sRb9lwbR43gFw2g3QsaPAl6Cws3LYxCyOZM5ENINdDPibefBZAYxuschtgNFMFfzW2JKoLh98ije3rNx-1lP3hZecxWBXCGHbhYla-w2AQrgn-rN8doDv41EkFSD2uD4iuArfZI5F2a5zt0PTNBbJbz9s64NWEpkD8qIcFLFqbFYnb5Tbs3BwUflwrupR4yxgSh9CkvHAjffR7sQauceRg-zSsk3xyNCKYUAXvf7naWwGfNb9djclMUcuIyCqjFZBHyTHqYchKRt8evQo5sneXbcBFTUo0zsEw=w726-h884-no">
+							</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td colspan="2">Current Messages</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+			<div class="row-fluid">
+				<form id="new-user">
+					<input type="text" id="username" placeholder="Enter Username" />
+					<input type="text" id="message" placeholder="Enter Message" />
+					<input type="submit" id="submit" value="Submit" class="btn" />
+				</form>	
+				
+			</div>
+		</div>
+	</body>
+</html>
